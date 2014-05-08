@@ -1,0 +1,35 @@
+{
+    "name": "Mumble",
+    "id": "mumble",
+    "description": {
+        "en": "Mumble is an open source voice over IP server.",
+        "fr": "Mumble est un logiciel libre de voix sur IP (VoIP)."
+    },
+    "developer": {
+        "name": "Fol",
+        "email": "fol@fol.tf",
+        "url": "https://github.com/jesuisfol/mumble_ynh"
+    },
+    "multi_instance": "true",
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "ask": {
+                    "en": "Choose a domain for Mumble",
+                    "fr": "Choisissez un domaine pour Mumble"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "ask": {
+                    "en": "Choose a path for Mumble",
+                    "fr": "Choisissez un chemin pour Mumble"
+                },
+                "example": "/mumble",
+                "default": "/mumble"
+            }
+        ]
+    }
+}
